@@ -40,8 +40,9 @@ const BlogPost = async ({params}) => {
 
     return (
         <div>
-            <h1>{blog.title}</h1>
-            <p>{blog.description}</p>
+            <h1 className="text-white" >Dummy page with id :{`${params.id}`} <br/> the data isn't fetched from the api but from local json data(dummy)</h1>
+            <h2 className="text-white">{blog.title}</h2>
+            <p className="text-white">{blog.description}</p>
         </div>
     );
 };
