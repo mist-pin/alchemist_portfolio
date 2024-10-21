@@ -1,0 +1,124 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    height: 70%;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 300px;
+
+    box-shadow: 0px 0px 50px;
+    z-index: 100;
+    border-radius: 20px;
+    padding: 50px;
+
+}
+
+.intro_section{
+    flex: 1;
+    overflow: hidden;
+
+    color: white;
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.me{
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.focus_point{
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+
+    -webkit-text-stroke: 1px white;
+    color:transparent
+}
+
+.what_i_do{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact_hook{
+    border-radius: 5px;
+    border: 1px solid white;
+    padding:5px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dp_section{
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dp_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.link_section{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+}
+
+.icon{
+    padding: 5px;
+
+    color: gray;
+    font-size: 30px;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+
+    transition: color .8s;
+}
+
+.icon:hover{
+    color: #fff;
+}

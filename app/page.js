@@ -1,11 +1,15 @@
-import Image from "next/image";
+import Home from "@/components/pages/home_page"
+import About from "@/components/pages/about_page"
+import Contact from "@/components/pages/contact_page"
+import BlogList from "@/components/pages/blog_page";
 
-export default function Home() {
-  return (
-    <div className="">
-      <h1>
-        Hello world
-      </h1>
-    </div>
-  );
-}
+const Main = () => {
+  return <>
+      <Home/>
+      <About/>
+      <Contact/>
+      <BlogList/>
+    </>
+};
+
+export default Main;

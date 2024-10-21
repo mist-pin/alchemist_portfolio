@@ -1,0 +1,136 @@
+/* headding and sub headding start*/
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.header{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.text_holder{
+    margin-top: 15vh;
+}
+
+.left, .right {
+    background-clip: text;
+    -webkit-text-stroke: 5px white;
+    text-stroke: 5px white;
+    font-size: 300px;
+    font-weight: 900;
+    color: #0000;
+    line-height:1;
+    display: inline;
+}
+
+.right{
+    -webkit-text-stroke: 5px #fffd;
+    text-stroke: 5px #fffd;
+    background-color: gray;
+}
+
+.sub_headding{
+    font-size: 60px;
+    font-weight: 600;
+    color: gray;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+/* headding and sub headding end*/
+
+/* project card section start*/
+
+.card_section{
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap:50px;
+    bottom: 5%;
+}
+
+.project_header{
+    max-width: fit-content;
+    color: gray;
+    font-size: 50px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+}
+
+.project_header_first_letter{
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.card_arrow_holder{
+    position: relative;
+    height: 100%;
+    overflow-x: visible;
+}
+
+.card_holder{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    max-width:50vw;
+    padding: 10px 0px;
+}
+
+.card_holder::after{
+    content: '';
+    min-height: 90%;
+    width: 25%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0%;
+    background: linear-gradient(90deg,#0000, #2b2e33);
+}
+
+.next_button{
+    position: absolute;
+    left:99%;
+    top: 10px;
+    bottom: 10px;
+    min-height: 90%;
+
+    width: max-content;
+    max-width:  300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* project card section end*/

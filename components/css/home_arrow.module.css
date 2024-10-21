@@ -1,0 +1,59 @@
+.holder{
+    position: relative;
+    padding: 1px;
+
+    border-radius: 100px 100px 100px 100px;
+    border: 5px solid #333;
+    border-right: 0px;
+    background: linear-gradient(90deg, #888, #2b2e33);
+
+    width:250px;
+    height: 100px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.arrow, .screw{
+    position: relative;
+    overflow: hidden;
+
+    border: 5px solid #888;
+    border-radius: 50%;
+
+    height: 90px;
+    width: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #2b2e33;
+}
+
+.screw{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+
+.screw::after, .screw::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 5px;
+    height: 100%;
+    background-color: black;
+}
+
+.screw::after{
+    transform: rotateX('90deg');
+}
