@@ -25,7 +25,7 @@ export default function AnimatedArrow(){
         const button_tl = gsap.timeline({
             ease:'none',
             onComplete:()=>{
-                set_nav_visible(true)
+                set_nav_visible(true);
                 sessionStorage.setItem('button_used', 'yes')
             }
         });

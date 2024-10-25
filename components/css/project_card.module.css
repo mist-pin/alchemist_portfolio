@@ -68,3 +68,34 @@
 .card:hover .title, .card:hover .description{
     color:#ffffff;
 }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 90%;
+        max-width: 200px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+}

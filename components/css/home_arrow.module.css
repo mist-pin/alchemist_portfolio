@@ -57,3 +57,38 @@
 .screw::after{
     transform: rotateX('90deg');
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .holder {
+        width: 200px; /* Adjust the holder width */
+        height: 80px; /* Adjust the holder height */
+    }
+
+    .arrow, .screw {
+        height: 70px; /* Adjust arrow and screw size */
+        width: 70px;
+    }
+
+    .screw {
+        height: 40px; /* Adjust screw size */
+        width: 40px; /* Adjust screw size */
+    }
+}
+
+@media (max-width: 576px) {
+    .holder {
+        width: 150px; /* Further reduce the holder width */
+        height: 60px; /* Further reduce the holder height */
+    }
+
+    .arrow, .screw {
+        height: 50px; /* Further adjust arrow and screw size */
+        width: 50px;
+    }
+
+    .screw {
+        height: 30px; /* Further adjust screw size */
+        width: 30px; /* Further adjust screw size */
+    }
+}

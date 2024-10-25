@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
+
 
 import styles from "./css/about_page.module.css"
 
@@ -15,7 +15,7 @@ const About = () => {
           <h1 className={styles.me}>Hi, I'm Alchemist</h1>
           <h1 className={styles.focus_point}>a full stack Developer</h1>
           <p className={styles.what_i_do}>I create all kinds of websites from portfolios, to huge e-commerce sites. If you are interested to get one for you, then don't forget to contact me.</p>
-          <button className={styles.contact_hook} >contact me..</button>
+          <Link href={'#contact'} className={styles.contact_hook} >contact me..</Link>
         </section>
 
         <section className={styles.dp_section}>

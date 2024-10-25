@@ -122,3 +122,78 @@
 .icon:hover{
     color: #fff;
 }
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .card {
+      width: 80%;
+      padding: 20px;
+    }
+    .intro_section {
+      gap: 10px;
+    }
+    .focus_point {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .card {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+      gap: 20px;
+    }
+    .dp_section {
+      flex: none;
+      height: 200px;
+      width: 200px;
+    }
+    .focus_point {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main {
+      padding: 10px;
+    }
+    .focus_point {
+      font-size: 30px;
+    }
+    .what_i_do {
+      font-size: 16px;
+    }
+    .link_section {
+      flex-direction: row;
+      gap: 5px;
+      right: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .intro_section {
+      text-align: center;
+      align-items: center;
+    }
+    .focus_point {
+      font-size: 25px;
+    }
+    .what_i_do {
+      font-size: 14px;
+    }
+    .contact_hook {
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+    .link_section {
+      right: 5px;
+      margin-top: 10px;
+    }
+  }

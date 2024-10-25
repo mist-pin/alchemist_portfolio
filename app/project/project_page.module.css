@@ -1,0 +1,117 @@
+.main{
+    height: 100vh;
+    position: relative;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headding{
+    position: sticky;
+    min-width: 90vw;
+    height: fit-content;
+
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-weight: 900;
+    font-size: 60px;
+    padding: 0%;
+
+    left: 50px;
+    align-self: center;
+    text-align: center;
+}
+
+.card_section{
+    height: fit-content;
+    min-height: fit-content;
+    max-height: 85%;
+
+    min-width: fit-content;
+    max-width: 100%;
+
+    overflow-y: auto;
+}
+
+.card_holder {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 0%;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+.card_holder>*{
+    height: fit-content;
+    max-height: fit-content;
+    min-height: fit-content;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .main {
+        padding: 0px 20px; /* Reduce padding for mobile */
+    }
+
+    .headding {
+        font-size: 40px; /* Reduce font size for heading on mobile */
+    }
+
+    .card_section {
+        max-height: 70%; /* Adjust max height for mobile */
+    }
+
+    .card_holder {
+        gap: 10px; /* Reduce gap between cards on mobile */
+    }
+
+    .card_holder > * {
+        width: 100%; /* Make cards full width on mobile */
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        padding: 0px 30px; /* Adjust padding for tablets */
+    }
+
+    .headding {
+        font-size: 50px; /* Adjust font size for tablets */
+    }
+
+    .card_section {
+        max-height: 80%; /* Adjust max height for tablets */
+    }
+
+    .card_holder {
+        gap: 15px; /* Slightly reduce gap for tablets */
+    }
+
+    .card_holder > * {
+        width: calc(50% - 15px); /* Two cards per row on tablets */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .headding {
+        font-size: 60px; /* Original font size for desktop */
+    }
+
+    .card_holder > * {
+        width: calc(25% - 15px); /* Four cards per row on desktop */
+    }
+}

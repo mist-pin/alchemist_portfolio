@@ -121,6 +121,75 @@
 
 
 
+/* tablet */
+@media (max-width: 1024px) {
+    .left, .right {
+        font-size: 200px;
+        -webkit-text-stroke: 4px white;
+    }
+
+    .sub_headding {
+        font-size: 40px;
+    }
+
+    .project_header {
+        font-size: 40px;
+    }
+
+    .project_header_first_letter {
+        font-size: 70px;
+    }
+
+    .card_section {
+        height: 40vh;
+        gap: 30px;
+    }
+
+    .card_holder {
+        max-width: 70vw;
+    }
+}
+
+/* Mobile (480px and up) */
+@media (max-width: 767px) {
+    .left, .right {
+        font-size: 100px;
+        -webkit-text-stroke: 2px white;
+    }
+
+    .sub_headding {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .project_header {
+        font-size: 30px;
+    }
+
+    .project_header_first_letter {
+        font-size: 50px;
+    }
+
+    .card_section {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+        bottom: 10%;
+    }
+
+    .card_holder {
+        max-width: 90vw;
+        padding: 0;
+    }
+
+    .next_button {
+        left: 90%;
+        top: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+}
+
 
 
 

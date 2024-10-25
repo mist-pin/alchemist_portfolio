@@ -1,0 +1,9 @@
+.main_container{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.horizontal_container{
+    display: flex;
+    width: 200vw;
+}

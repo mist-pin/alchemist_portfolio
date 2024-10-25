@@ -59,7 +59,65 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     display: none;
     will-change: display;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav_holder {
+        max-width: 100%; /* Make the navbar full width on smaller screens */
+    }
+
+    .show_button {
+        display: flex; /* Ensure the show button is displayed */
+        max-height: 60px; /* Adjust height for mobile */
+        min-height: 40px; /* Adjust min height for mobile */
+    }
+
+    .content_holder {
+        max-height: 50vh; /* Adjust content holder height for mobile */
+        min-height: 30vh; /* Adjust min height for mobile */
+        padding: 5px; /* Adjust padding for mobile */
+    }
+
+    .link {
+        font-size: 20px; /* Reduce font size for mobile */
+        padding: 5px; /* Adjust padding for links on mobile */
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav_holder {
+        max-width: 15vw; /* Increase width on tablets */
+    }
+
+    .show_button {
+        max-height: 80px; /* Adjust height for tablets */
+        min-height: 50px; /* Adjust min height for tablets */
+    }
+
+    .content_holder {
+        max-height: 70vh; /* Adjust content holder height for tablets */
+        min-height: 50vh; /* Adjust min height for tablets */
+    }
+
+    .link {
+        font-size: 22px; /* Slightly larger font size for tablets */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .nav_holder {
+        max-width: 10vw; /* Keep original width for desktops */
+    }
+
+    .link {
+        font-size: 25px; /* Original font size for desktop */
+    }
 }

@@ -105,3 +105,51 @@
     /* background-color: #005bb5; */
     box-shadow: 0 2px 5px #0009;
 }
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px; /* Adjust padding for smaller screens */
+        max-width: 90%; /* Allow more width on medium screens */
+        margin: 15px auto; /* Reduce margin */
+    }
+
+    .title {
+        font-size: 20px; /* Decrease title font size */
+    }
+
+    .description {
+        font-size: 14px; /* Decrease description font size */
+    }
+
+    .author {
+        font-size: 12px; /* Decrease author font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 10px; /* Further adjust padding for small screens */
+        max-width: 100%; /* Use full width on small screens */
+        margin: 10px auto; /* Further reduce margin */
+    }
+
+    .title {
+        font-size: 18px; /* Further decrease title font size */
+    }
+
+    .description {
+        font-size: 12px; /* Further decrease description font size */
+    }
+
+    .date {
+        font-size: 10px; /* Decrease date font size */
+        padding: 3px 6px; /* Adjust padding for date */
+    }
+
+    .button {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+}
